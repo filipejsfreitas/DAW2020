@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectrecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ProjectRecord.xsd">
+    <keyname>DAW2020:TP2</keyname>
+    <title>Trabalho Prático 2: Criação de um DTD para Project Records</title>
+    <begindate>2020-10-21</begindate>
+    <enddate>2020-10-27</enddate>
+    <supervisor>
+        <link href="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </link>
+    </supervisor>
+    <workteam>
+        <member>
+            <id>PG42828</id>
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            O segundo trabalho da UC de Desenvolvimento de Aplicações Web (TP2) consiste na criação de um DTD para descrever a estrutura de ficheiros XML que serão "<b>Project Records</b>".
+        </p>
+        <p>
+            Um <b>Project Record</b> é um documento breve que descreve o enunciado, objetivos, prazos, e elementos do grupo de trabalho de um projeto. Existirá um <b>Project Record</b>
+            para cada um dos projetos elaborados no decurso da UC.
+        </p>
+        <p>
+            Após a elaboração do DTD dos <b>Project Records</b>, deverá ser criado um <b>Project Record</b> relativo à elaboração desse mesmo DTD.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable>
+            <link href="ProjectRecord.dtd">
+                ProjectRecord.dtd - DTD descrevendo a estrutura de um Project Record
+            </link>
+        </deliverable>
+        <deliverable>
+            <link href="TP2.xml">
+                TP2.xml - XML do Project Record relativo à criação do DTD
+            </link>
+        </deliverable>
+    </deliverables>
+</projectrecord>

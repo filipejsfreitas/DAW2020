@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="projectrecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="keyname"/>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="subtitle"/>
+        <xs:element ref="begindate"/>
+        <xs:element ref="enddate"/>
+        <xs:element ref="supervisor"/>
+        <xs:element ref="workteam"/>
+        <xs:element ref="abstract"/>
+        <xs:element ref="deliverables"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="keyname" type="xs:string"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="subtitle" type="xs:string"/>
+  <xs:element name="begindate" type="xs:string"/>
+  <xs:element name="enddate" type="xs:string"/>
+  <xs:element name="supervisor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="workteam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="member"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="abstract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="p"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deliverables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="deliverable"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="link">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.link"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.link">
+    <xs:attribute name="href" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="member">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="id"/>
+        <xs:element ref="name"/>
+        <xs:element ref="email"/>
+        <xs:element minOccurs="0" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deliverable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="i">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="b">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="i"/>
+        <xs:element ref="u"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="u">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
