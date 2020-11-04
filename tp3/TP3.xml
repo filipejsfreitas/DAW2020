@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectrecord SYSTEM "../tp2/ProjectRecord.dtd">
+<projectrecord>
+    <keyname>DAW2020:TP3</keyname>
+    <title>Trabalho Prático 3: Criação de um DTD e de uma Stylesheet para a Base de Dados dos Arqueosítios do NW de Portugal</title>
+    <begindate>2020-10-28</begindate>
+    <enddate>2020-11-04</enddate>
+    <supervisor>
+        <link href="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </link>
+    </supervisor>
+    <workteam>
+        <member>
+            <id>PG42828</id>
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            O terceiro trabalho da UC de Desenvolvimento de Aplicações Web (TP3) consiste na criação de um DTD para descrever a estrutura da base de dados dos arqueosítios do NW de Portugal.
+        </p>
+        <p>
+            Deverá também ser criada uma Stylesheet para apresentar corretamente o ficheiro XML contendo a base de dados referida.
+        </p>
+        <p>
+            Após a elaboração do DTD e da Stylesheet, deverá ser criado um <b>Project Record</b> relativo à elaboração desse DTD e dessa Stylesheet.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable>
+            <link href="arq.dtd">
+                arq.dtd - Descrição do formato da Base de Dados dos Arqueosítios
+            </link>
+        </deliverable>
+        <deliverable>
+            <link href="arq.xsl">
+                arq.xsl - Stylesheet para formatar a página da Base de Dados
+            </link>
+        </deliverable>
+        <deliverable>
+            <link href="TP3.xml">
+                TP3.xml - Project Record relativo ao TP3
+            </link>
+        </deliverable>
+    </deliverables>
+</projectrecord>
