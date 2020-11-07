@@ -1,0 +1,6 @@
+- Pegar no dataset dos arqueosítios e:
+    1) Gerar para uma pasta ficheiros arq1.html, arq2.html, arq3.html, etc. para cada arqueosítio
+    2) Criar um servidor NodeJS, com validação apropriada dos pedidos, para responder:
+        - GET /arqs/i -> Responder com o arq{i}.html
+    3) Gerar uma página de índice com hrefs na forma /arqs/{i}
+    

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM '../ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>DAW2020:TP4</key>
+        <title>Trabalho Prático 4: Criação de um servidor em NodeJS para servir os ficheiros HTML gerados a partir da Base de Dados dos Arqueosítios do NW Português</title>
+        <bdate>2020-11-04</bdate>
+        <edate>2020-11-10</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG42828">
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+            <link url="https://github.com/filipejsfreitas" />
+        </member>
+    </team>
+    <abstract>
+        <p>
+            O quarto trabalho da UC de Desenvolvimento de Aplicações Web (TP4) consiste na criação, em NodeJS, de um servidor para responder a pedidos sobre os arqueosítios do NW Português.
+        </p>
+        <p>
+            Deverá ser também alterada a Stylesheet criada no TP3 para que esta gere corretamente os endereços a utilizar no servidor NodeJS.
+        </p>
+        <p>
+            O servidor NodeJS deverá responder aos pedidos em <i>/arqs</i> com o <i>index.html</i>, e aos pedidos em <i>/arqs/{i}</i> com o ficheiro <i>arq{i}.html</i>, sendo {i} o número do arqueosítio a consultar.
+        </p>
+        <p>
+            Após a elaboração do servidor e da Stylesheet, deverá ser criado um <b>Project Record</b> relativo à elaboração desse servidor e dessa Stylesheet.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="arq.xsl">Stylesheet alterada que gera os ficheiros HTML a apresentar</link>
+        <link url="server.js">Servidor NodeJS para responder aos pedidos</link>
+    </deliverables>
+</pr>
