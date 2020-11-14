@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM '../ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>DAW2020:TP4</key>
+        <title>Trabalho Prático 5: Criação de um servidor em NodeJS para servir páginas dinâmicas com informações retiradas da base de dados da Escola de Música</title>
+        <bdate>2020-11-11</bdate>
+        <edate>2020-11-17</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG42828">
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+            <link url="https://github.com/filipejsfreitas" />
+        </member>
+    </team>
+    <abstract>
+        <p>
+            O quinto trabalho da UC de Desenvolvimento de Aplicações Web (TP5) consiste na criação, em NodeJS, de um servidor para responder a pedidos sobre a base de dados da Escola de Música (fornecida).
+        </p>
+        <p>
+            A base de dados é disponibilizada num ficheiro JSON, de tal modo que a <i>library <b>json-server</b></i> possa interpretar os dados lá contidos.
+        </p>
+        <p>
+            O servidor NodeJS deverá responder às rotas <b>/</b>, <b>/alunos</b>, <b>/cursos</b> e <b>/instrumentos</b>, e para cada uma destas coleções, a rota <b>/&lt;coleção&gt;/&lt;id&gt;</b> corresponde à entrada com id <b>&lt;id&gt;</b>.
+        </p>
+        <p>
+            Deverá depois ser realizado o <i>Project Record</i> relativo a este projeto.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="server.js">server.js - Entrypoint do servidor</link>
+        <link url="util.js">util.js - Várias funções comuns de ajuda aos handlers de pedidos</link>
+        <link url="alunos.js">alunos.js - Módulo para responder aos pedidos sobre alunos</link>
+        <link url="cursos.js">cursos.js - Módulo para responder aos pedidos sobre cursos</link>
+        <link url="instrumentos.js">instrumentos.js - Módulo para responder aos pedidos sobre instrumentos</link>
+        <link url="db.json">db.json - Base de dados da Escola de Música</link>
+    </deliverables>
+</pr>
