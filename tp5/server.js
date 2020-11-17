@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
             cursos.handleGetCurso(req, res, url)
         } else if(url == '/instrumentos') {
             instrumentos.handleGetInstrumentos(req, res)
-        } else if(url.match(/\/instrumentos\/I[0-9]+$/)) {
+        } else if(url.match(/\/instrumentos\/[A-Z][0-9]+$/)) {
             instrumentos.handleGetInstrumento(req, res, url)
         } else {
             util.send404Response(res, '/')
