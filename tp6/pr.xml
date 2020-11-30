@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM '../ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>DAW2020:TP6</key>
+        <title>Trabalho Prático 6: Criação de um gestor de tarefas com recurso a NodeJS e JSON-Server</title>
+        <bdate>2020-11-18</bdate>
+        <edate>2020-11-24</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG42828">
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+            <link url="https://github.com/filipejsfreitas" />
+        </member>
+    </team>
+    <abstract>
+        <p>
+            O sexto trabalho da UC de Desenvolvimento de Aplicações Web (TP5) consiste na criação de um gestor de tarefas pendentes.
+        </p>
+        <p>
+            A API de dados é disponibilizada com recurso ao <i>json-server</i>, sendo que a base de dados é guardada num ficheiro JSON.
+        </p>
+        <p>
+            A interface do gestor de tarefas deverá ser uma <i>Single-Page Application</i>, sendo que os pedidos ao servidor serão feitos com recurso a AJAX (especificamente, com recurso ao <i>axios</i> no browser).
+        </p>
+        <p>
+            Neste projeto em particular, a arquitetura do servidor foi exageradamente separada, desde logo com a criação de um módulo de roteamento, mas de um modo a obter um resultado final mais legível.
+        </p>
+        <p>
+            Deverá depois ser realizado o <i>Project Record</i> relativo a este projeto.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="frontend-server/server.js">server.js - Entrypoint do servidor</link>
+        <link url="frontend-server/util.js">util.js - Várias funções comuns de ajuda aos handlers de pedidos</link>
+        <link url="frontend-server/tasks.js">tasks.js - Módulo para responder aos pedidos sobre tasks</link>
+        <link url="frontend-server/main-page.js">main-page.js - Módulo para responder aos pedidos da página principal</link>
+        <link url="frontend-server/router.js">router.js - Módulo para ajudar a rotear os pedidos do utilizador para as funções corretas no código</link>
+        <link url="frontend-server/public/">public/ - Pasta contendo recursos estáticos</link>
+        <link url="rest-api/db.json">db.json - Base de dados da Escola de Música</link>
+    </deliverables>
+</pr>
