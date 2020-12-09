@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM '../ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>DAW2020:TP8</key>
+        <title>Trabalho Prático 8: Upload de múltiplos ficheiros com Express</title>
+        <bdate>2020-12-02</bdate>
+        <edate>2020-12-08</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG42828">
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+            <link url="https://github.com/filipejsfreitas" />
+        </member>
+    </team>
+    <abstract>
+        <p>
+            O oitavo e último trabalho da UC de Desenvolvimento de Aplicações Web (TP8) consiste na modificação de um servidor feito durante a aula para permitir o upload de vários ficheiros simultaneamente.
+        </p>
+        <p>
+            No final deverá ser elaborado o <i>Project Record</i> relativo a este projeto.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="server.js">server.js - Entrypoint do servidor</link>
+        <link url="html-templates.js">html-templates.js - Templates HTML para as respostas do servidor</link>
+        <link url="dbFiles.json">dbFiles.json - Base de dados contendo os ficheiros que já tiveram upload feito</link>
+        <link url="public/">public/ - Pasta contendo os ficheiros e pastas de acesso público</link>
+    </deliverables>
+</pr>
