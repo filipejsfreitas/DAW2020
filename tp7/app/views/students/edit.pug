@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student #{student.nome} (DAW2020)
+      
+      .w3-container 
+        form(method='POST' action=`/students/${student.numero}?_method=PUT`)
+          label(for='numero') Number:
+          input.form-control(type='text' name='numero' value=student.numero)/
+
+          label(for='nome') Nome:
+          input.form-control(type='text' name='nome' value=student.nome)/
+          
+          label(for='git') Git:
+          input.form-control(type='text' name='git' value=student.git)/
+          
+          ol
+            each tpc, i in student.tpc
+              input(type='hidden' name=`tpc[${i}]` value=0)
+              | TPC#{i+1}: &nbsp;
+
+              if tpc === 1
+                input.form-control(type='checkbox', name=`tpc[${i}]` value=1 checked)/
+              else
+                input.form-control(type='checkbox' name=`tpc[${i}]` value=1)/
+
+              br/
+
+          input(type='submit' value='Submeter')
+
+        a(href='/students') [Voltar]
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, jcr

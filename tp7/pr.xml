@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM '../ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>DAW2020:TP7</key>
+        <title>Trabalho Prático 7: Aplicação completa para gestão de alunos</title>
+        <bdate>2020-11-25</bdate>
+        <edate>2020-12-02</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG42828">
+            <name>Filipe Freitas</name>
+            <email>pg42828@alunos.uminho.pt</email>
+            <link url="https://github.com/filipejsfreitas" />
+        </member>
+    </team>
+    <abstract>
+        <p>
+            O sétimo trabalho prático da UC consiste na modificação de uma aplicação desenvolvida na aula de modo a que esta suporte todas as operações necessárias sobre alunos (consultar, register, alterar e apagar registos).
+        </p>
+        <p>
+            A aplicação deve ser completada de acordo com os moldes dados na aula prática.
+        </p>
+        <p>
+            No final deverá ser elaborado o <i>Project Record</i> relativo a este projeto.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="app/">app/ - Contém a aplicação completa desenvolvida</link>
+        <link url="db/">db/ - Contém os dados iniciais para carregar a base de dados MongoDB</link>
+    </deliverables>
+</pr>

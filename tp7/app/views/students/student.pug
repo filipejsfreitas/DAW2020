@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student #{student.nome} (DAW2020)
+      
+      .w3-container 
+        ul
+          li Number: #{student.numero}
+          li Name: #{student.nome}
+          li Git: #{student.git}
+          li TPCs done
+            ol
+              each tpc in student.tpc
+                if tpc === 1
+                  li Realizado
+                else
+                  li Não realizado
+
+        a(href='/students') [Voltar]
+        | &nbsp;&nbsp;
+        a(href='/students/' + student.numero + '/edit') [Editar]
+        | &nbsp; &nbsp;
+        // TODO: Properly send a POST request to delete
+        a(href=`#` onclick='deleteStudent()') [Apagar]
+
+        form(method='POST' action=`/students/${student.numero}?_method=DELETE` id='delete-form')
+
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, jcr
+
+      script(type='text/javascript')
+        | function deleteStudent() {
+        |   document.forms['delete-form'].submit();
+        | }

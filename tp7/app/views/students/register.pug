@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student List (DAW2020)
+      
+      .w3-container
+        h1 Register new Student
+
+        form(method='POST' action=`/students`)
+          label(for='numero') Number:
+          input.form-control(type='text' name='numero')/
+          | &nbsp;
+
+          label(for='nome') Nome:
+          input.form-control(type='text' name='nome')/
+          | &nbsp;
+
+          label(for='git') Git:
+          input.form-control(type='text' name='git')/
+          | &nbsp;
+          
+          ol
+            // Assume 8 TPCs
+            each tpc, i in [0, 0, 0, 0, 0, 0, 0, 0]
+              input(type='hidden' name=`tpc[${i}]` value=0)
+              | TPC#{i+1}: &nbsp;
+              input.form-control(type='checkbox' name=`tpc[${i}]` value=1)/
+              br/
+
+          input(type='submit' value='Submeter')
+
+        a(href='/students') [Voltar]
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, jcr
